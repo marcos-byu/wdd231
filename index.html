@@ -3,9 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Marcos da Silva | WDD 231 Home</title>
+    <meta name="description" content="WDD 231 course home page for Marcos da Silva, featuring course work, location, and the Web and Computer Programming certificate progress.">
+    <meta name="author" content="Marcos da Silva">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <header>
+        <img src="images/logo.svg" alt="MS logo" width="48" height="48" class="logo">
+        <span class="site-name">Marcos da Silva</span>
+        <button id="menu" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links"></button>
+    </header>
+
+    <nav>
+        <ul id="nav-links" class="navigation">
+            <li class="active"><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="final/index.html">Final</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <section class="card coursework">
+            <h2>Course Work</h2>
+            <ul>
+                <li>WDD 130 - Web Fundamentals</li>
+                <li>WDD 131 - Dynamic Web Fundamentals</li>
+                <li>WDD 231 - Frontend Web Development I</li>
+                <li>CSE 110 - Introduction to Programming</li>
+                <li>CSE 111 - Programming with Functions</li>
+                <li>CSE 210 - Programming with Classes</li>
+            </ul>
+        </section>
+
+        <section class="card location">
+            <h2>Brazil</h2>
+            <p>I live in Brazil and study online through BYU-Pathway Worldwide.</p>
+        </section>
+
+        <section class="card certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filters" role="group" aria-label="Filter courses">
+                <button type="button" id="all" class="filter active">All</button>
+                <button type="button" id="cse" class="filter">CSE</button>
+                <button type="button" id="wdd" class="filter">WDD</button>
+            </div>
+            <div id="courses" class="course-grid"></div>
+            <p class="totals">The total number of courses listed above is <span id="course-count">0</span>,
+                with <span id="credit-total">0</span> credits.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/marcos-byu" target="_blank" rel="noopener">
+                <img src="images/github.svg" alt="GitHub" width="32" height="32">
+            </a>
+            <a href="https://www.linkedin.com/in/marcosedasilva/" target="_blank" rel="noopener">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="32" height="32">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+                <img src="images/instagram.svg" alt="Instagram" width="32" height="32">
+            </a>
+        </div>
+        <p>&copy;<span id="currentyear"></span> | Marcos da Silva | Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

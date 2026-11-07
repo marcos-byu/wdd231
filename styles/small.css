@@ -1,0 +1,215 @@
+:root {
+    --primary: #1d3557;
+    --secondary: #457b9d;
+    --accent: #e76f51;
+    --light: #f1faee;
+    --completed: #1f7a6f;
+    --text: #1b1b1b;
+    --white: #ffffff;
+    --font: "Nunito", Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    color: var(--text);
+    background-color: var(--light);
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.site-name {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+#menu {
+    margin-left: auto;
+    width: 44px;
+    height: 44px;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: var(--white);
+    background: none;
+    border: 2px solid var(--white);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+nav {
+    background-color: var(--secondary);
+}
+
+.navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.navigation.open {
+    display: block;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+}
+
+.navigation a:hover {
+    background-color: var(--primary);
+    border-bottom-color: var(--accent);
+}
+
+.navigation .active a {
+    background-color: var(--accent);
+    color: var(--text);
+}
+
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+}
+
+h1 {
+    margin: 0.5rem 0;
+    color: var(--primary);
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.card h2 {
+    margin: 0;
+    padding: 0.75rem 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.coursework ul {
+    margin: 0;
+    padding: 1rem 1rem 1rem 2.25rem;
+}
+
+.coursework li {
+    padding: 0.25rem 0;
+}
+
+.location p {
+    margin: 0;
+    padding: 1rem;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 1rem;
+}
+
+.filter {
+    font-family: var(--font);
+    font-size: 1rem;
+    font-weight: 600;
+    min-width: 70px;
+    padding: 0.5rem 0.75rem;
+    color: var(--white);
+    background-color: var(--secondary);
+    border: 2px solid var(--secondary);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.filter:hover,
+.filter.active {
+    background-color: var(--primary);
+    border-color: var(--accent);
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    padding: 0 1rem;
+}
+
+.course {
+    padding: 0.75rem;
+    text-align: center;
+    font-weight: 800;
+    border-radius: 8px;
+    background-color: var(--accent);
+    color: var(--text);
+}
+
+.course.completed {
+    background-color: var(--completed);
+    color: var(--white);
+}
+
+.totals {
+    text-align: center;
+    padding: 0 1rem 0.5rem;
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.social img {
+    width: 32px;
+    height: 32px;
+}

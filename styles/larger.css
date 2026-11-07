@@ -1,0 +1,42 @@
+@media (min-width: 640px) {
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation li {
+        flex: 0 1 160px;
+        text-align: center;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+        padding: 1.5rem;
+    }
+
+    h1,
+    .certificate {
+        grid-column: 1 / -1;
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        gap: 1rem;
+        text-align: left;
+    }
+
+    .social {
+        margin-bottom: 0;
+    }
+}
+
