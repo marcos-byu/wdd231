@@ -41,6 +41,37 @@
         gap: 0 1.5rem;
     }
 
+    .home {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .hero,
+    .home h1,
+    .events,
+    .spotlight-area {
+        grid-column: 1 / -1;
+    }
+
+    .home h1 {
+        margin: 0;
+    }
+
+    .box {
+        margin-bottom: 0;
+    }
+
+    #spotlights {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .spotlight {
+        margin-bottom: 0;
+    }
+
     footer {
         display: flex;
         justify-content: space-between;
@@ -50,6 +81,14 @@
 }
 
 @media (min-width: 1000px) {
+    .home {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    .events {
+        grid-column: auto;
+    }
+
     .grid {
         grid-template-columns: repeat(3, 1fr);
     }
