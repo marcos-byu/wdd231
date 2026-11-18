@@ -1,0 +1,226 @@
+:root {
+    --primary: #0b3954;
+    --secondary: #087e8b;
+    --accent: #ffc857;
+    --background: #f5f5f5;
+    --text: #222222;
+    --white: #ffffff;
+    --font: "Roboto", Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    color: var(--text);
+    background-color: var(--background);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.site-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#menu {
+    margin-left: auto;
+    width: 44px;
+    height: 44px;
+    font-size: 1.5rem;
+    color: var(--white);
+    background: none;
+    border: 2px solid var(--white);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+/* navigation */
+nav {
+    background-color: var(--secondary);
+}
+
+.navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.navigation.open {
+    display: block;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color: var(--primary);
+}
+
+.navigation .active a {
+    background-color: var(--accent);
+    color: var(--text);
+    font-weight: 700;
+}
+
+/* main */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    color: var(--primary);
+}
+
+.view-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.view-buttons button {
+    font-family: var(--font);
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--white);
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-buttons button.active,
+.view-buttons button:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+/* member cards */
+.member {
+    background-color: var(--white);
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-top {
+    text-align: center;
+    padding: 0.75rem;
+    border-bottom: 2px solid var(--secondary);
+}
+
+.card-top h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: var(--primary);
+}
+
+.tagline {
+    margin: 0.25rem 0 0;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.card-body {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card-body img {
+    width: 100px;
+    height: 100px;
+}
+
+.card-info p {
+    margin: 0 0 0.4rem;
+    font-size: 0.9rem;
+    overflow-wrap: anywhere;
+}
+
+.card-info a {
+    color: var(--primary);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* list view */
+.list .member {
+    border-radius: 0;
+}
+
+.list .member:nth-child(even) {
+    background-color: #e8f1f2;
+}
+
+.list .card-top {
+    text-align: left;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.list .card-body {
+    padding-top: 0.5rem;
+}
+
+.list .card-body img,
+.list .tagline {
+    display: none;
+}
+
+/* footer */
+footer {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.social img {
+    width: 32px;
+    height: 32px;
+}

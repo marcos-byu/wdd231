@@ -1,0 +1,56 @@
+@media (min-width: 640px) {
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation li {
+        flex: 0 1 150px;
+        text-align: center;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .list .member {
+        display: flex;
+        align-items: center;
+    }
+
+    .list .card-top {
+        width: 250px;
+        padding: 0.75rem;
+    }
+
+    .list .card-top h2 {
+        font-size: 1.1rem;
+    }
+
+    .list .card-body {
+        padding: 0.75rem;
+    }
+
+    .list .card-info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 1.5rem;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

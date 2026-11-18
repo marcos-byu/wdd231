@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory | São Paulo Chamber of Commerce</title>
+    <meta name="description" content="Directory of member businesses of the São Paulo Chamber of Commerce.">
+    <meta name="author" content="Marcos da Silva">
+
+    <meta property="og:title" content="São Paulo Chamber of Commerce - Directory">
+    <meta property="og:description" content="Find local businesses that are members of the São Paulo Chamber of Commerce.">
+    <meta property="og:image" content="https://marcos-byu.github.io/wdd231/chamber/images/chamber-og.png">
+    <meta property="og:url" content="https://marcos-byu.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Chamber logo" width="50" height="50">
+        <span class="site-name">São Paulo Chamber of Commerce</span>
+        <button id="menu" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links"></button>
+    </header>
+
+    <nav>
+        <ul id="nav-links" class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="directory.html" aria-current="page">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Directory</h1>
+
+        <div class="view-buttons">
+            <button type="button" id="grid" class="active">Grid</button>
+            <button type="button" id="list">List</button>
+        </div>
+
+        <div id="members" class="grid"></div>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <p><strong>São Paulo Chamber of Commerce</strong></p>
+            <p>Rua Boa Vista, 51 - Centro</p>
+            <p>São Paulo - SP, 01014-911</p>
+            <p>contact@spchamber.org</p>
+            <p>(11) 3180-3000</p>
+        </div>
+        <div class="social">
+            <a href="https://github.com/marcos-byu" target="_blank" rel="noopener">
+                <img src="images/github.svg" alt="GitHub" width="32" height="32">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="32" height="32">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+                <img src="images/instagram.svg" alt="Instagram" width="32" height="32">
+            </a>
+        </div>
+        <div class="info">
+            <p>WDD 231 Class Project</p>
+            <p>Marcos da Silva</p>
+            <p>&copy;<span id="currentyear"></span> São Paulo Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

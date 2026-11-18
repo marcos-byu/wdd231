@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Café Paulista",
+        "address": "Av. Paulista, 1000 - Bela Vista, São Paulo - SP",
+        "email": "contact@cafepaulista.com.br",
+        "phone": "(11) 3251-1000",
+        "website": "https://www.cafepaulista.com.br",
+        "image": "cafe-paulista.svg",
+        "membership": 3,
+        "tagline": "The best coffee on Paulista Avenue"
+    },
+    {
+        "name": "Tech Sampa",
+        "address": "Rua Funchal, 418 - Vila Olímpia, São Paulo - SP",
+        "email": "contact@techsampa.com.br",
+        "phone": "(11) 3045-2200",
+        "website": "https://www.techsampa.com.br",
+        "image": "tech-sampa.svg",
+        "membership": 3,
+        "tagline": "Software and IT support for small businesses"
+    },
+    {
+        "name": "Livraria do Centro",
+        "address": "Rua XV de Novembro, 120 - Centro, São Paulo - SP",
+        "email": "contact@livrariadocentro.com.br",
+        "phone": "(11) 3105-4433",
+        "website": "https://www.livrariadocentro.com.br",
+        "image": "livraria-centro.svg",
+        "membership": 2,
+        "tagline": "Books for all ages since 1985"
+    },
+    {
+        "name": "Padaria Bela Vista",
+        "address": "Rua Treze de Maio, 560 - Bela Vista, São Paulo - SP",
+        "email": "contact@padariabelavista.com.br",
+        "phone": "(11) 3284-7788",
+        "website": "https://www.padariabelavista.com.br",
+        "image": "padaria-bela-vista.svg",
+        "membership": 1,
+        "tagline": "Fresh bread every morning"
+    },
+    {
+        "name": "Academia Ibirapuera",
+        "address": "Av. República do Líbano, 1500 - Ibirapuera, São Paulo - SP",
+        "email": "contact@academiaibirapuera.com.br",
+        "phone": "(11) 3887-9090",
+        "website": "https://www.academiaibirapuera.com.br",
+        "image": "academia-ibirapuera.svg",
+        "membership": 2,
+        "tagline": "Fitness classes near the park"
+    },
+    {
+        "name": "Floricultura Jardins",
+        "address": "Rua Oscar Freire, 300 - Jardins, São Paulo - SP",
+        "email": "contact@floriculturajardins.com.br",
+        "phone": "(11) 3062-1212",
+        "website": "https://www.floriculturajardins.com.br",
+        "image": "floricultura-jardins.svg",
+        "membership": 1,
+        "tagline": "Flowers and gifts for every occasion"
+    },
+    {
+        "name": "Auto Peças Mooca",
+        "address": "Rua da Mooca, 2100 - Mooca, São Paulo - SP",
+        "email": "contact@autopecasmooca.com.br",
+        "phone": "(11) 2693-5050",
+        "website": "https://www.autopecasmooca.com.br",
+        "image": "auto-pecas-mooca.svg",
+        "membership": 2,
+        "tagline": "Car parts and repair services"
+    },
+    {
+        "name": "Hotel Liberdade",
+        "address": "Rua Galvão Bueno, 80 - Liberdade, São Paulo - SP",
+        "email": "contact@hotelliberdade.com.br",
+        "phone": "(11) 3209-6060",
+        "website": "https://www.hotelliberdade.com.br",
+        "image": "hotel-liberdade.svg",
+        "membership": 3,
+        "tagline": "Comfortable rooms in the heart of Liberdade"
+    }
+]
